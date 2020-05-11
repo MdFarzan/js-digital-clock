@@ -5,10 +5,13 @@
 }
 body{
     font-family: 'Open Sans', sans-serif;
+    background: #14d2ac;
+    color: #000000;
 }
 
 #wrapper{
     height:100vh;
+    
 }
 
 .flex-hl-vl-center{
@@ -20,6 +23,26 @@ body{
     flex-direction:column;
 }
 
+#content-wrapper{
+    
+}
+
+.time{
+    padding:0px 5px;
+}
 .row{
-    border:1px solid black;
+    padding:3px 10px;
+}
+
+.greetings{
+    font-size:1.3em;
+}
+.time, .sep{
+    font-size:3em;
+    border-bottom:1px solid black;
+    border-top:1px solid black;
+}
+
+.date{
+    font-size:1.5em;
 }
