@@ -16,3 +16,10 @@ body{
     justify-content:center;
     align-items:center;
 }
+.col{
+    flex-direction:column;
+}
+
+.row{
+    border:1px solid black;
+}
