@@ -29,6 +29,7 @@ body{
 
 .time{
     padding:0px 5px;
+    font-weight:200;
 }
 .row{
     padding:3px 10px;
@@ -51,6 +52,10 @@ body{
     font-family:'open sans',arial;
 }
 
-.date{
+.date-container{
     font-size:1.5em;
+    text-align:center;
+}
+#day{
+    font-weight:bold;
 }
