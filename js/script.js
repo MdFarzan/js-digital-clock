@@ -7,6 +7,8 @@ const seconds = document.querySelector("#seconds");
 //setting all things only first time
 (function(){
     console.log("Anonymous self calling function is working");  
+    setSeconds();
+    setMinutes(new Date());
 }());
 
 //calling second function in 1 second
@@ -21,7 +23,22 @@ function setSeconds(){
     if(sec<=9)
     sec = ('0'+sec);
 
+    // and displaying seconds
     seconds.innerHTML = sec;
+
+    //calling minutes function
+    if(sec==0)
+    setMinutes(date);
+}
+
+//setting minutes
+function setMinutes(date){
+    let min = date.getMinutes();
+    if(min<=9)
+    min = ('0'+min);
+    
+    //displaying minutes;
+    minutes.innerText = min;
 }
 
 
