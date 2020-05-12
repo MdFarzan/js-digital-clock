@@ -34,13 +34,21 @@ body{
     padding:3px 10px;
 }
 
+.row:nth-child(2){
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+    padding:0px 10px;
+}
+
 .greetings{
     font-size:1.3em;
 }
 .time, .sep{
     font-size:3em;
-    border-bottom:1px solid black;
-    border-top:1px solid black;
+}
+
+.sep{
+    font-family:'open sans',arial;
 }
 
 .date{
