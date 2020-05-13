@@ -7,10 +7,11 @@ const greetings = document.querySelector(".greetings");
 
 //setting all things only first time
 (function(){
-    console.log("Anonymous self calling function is working");  
+    
     setSeconds();
     setMinutes(new Date());
     setHours(new Date());
+    
 }());
 
 //calling second function in 1 second
@@ -53,9 +54,13 @@ function setHours(date){
     
     if(hour>12)
     hour-=12;
-
+    
     if(hour<=9)
     hour = ('0'+hour)
+
+    if(hour==0)
+    hour = 12;
+    
     //displaying hours
     hours.innerText = hour;
 
