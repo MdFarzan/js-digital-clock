@@ -3,6 +3,7 @@
 const hours = document.querySelector("#hours");
 const minutes = document.querySelector("#minutes");
 const seconds = document.querySelector("#seconds");
+const greetings = document.querySelector(".greetings");
 
 //setting all things only first time
 (function(){
@@ -57,4 +58,24 @@ function setHours(date){
     hour = ('0'+hour)
     //displaying hours
     hours.innerText = hour;
+
+  //setting greeting line
+  setGreetings(new Date().getHours());  
 }
+
+function setGreetings(hour){
+    console.log(hour);
+    if(hour<12)
+        greetings.innerText = "Good Morning.";
+
+    else if((hour>=12) && (hour<=18))
+        greetings.innerText = "Good Afternoon.";
+    
+    else if((hour>18) && (hour<=20))
+    greetings.innerText = "Good Evening.";
+
+    else
+    greetings.innerText = "Good Night.";
+
+}
+
