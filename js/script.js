@@ -4,6 +4,10 @@ const hours = document.querySelector("#hours");
 const minutes = document.querySelector("#minutes");
 const seconds = document.querySelector("#seconds");
 const greetings = document.querySelector(".greetings");
+const day = document.querySelector("#day");
+const date = document.querySelector("#date");
+const month = document.querySelector("#month");
+const year = document.querySelector("#year");
 
 //setting all things only first time
 (function(){
@@ -11,7 +15,7 @@ const greetings = document.querySelector(".greetings");
     setSeconds();
     setMinutes(new Date());
     setHours(new Date());
-    
+    setDate();
 }());
 
 //calling second function in 1 second
@@ -69,7 +73,7 @@ function setHours(date){
 }
 
 function setGreetings(hour){
-    console.log(hour);
+    
     if(hour<12)
         greetings.innerText = "Good Morning.";
 
@@ -84,3 +88,8 @@ function setGreetings(hour){
 
 }
 
+//setting date
+function setDate(){
+    var date = new Date();
+    day.innerText = (date.toString().slice(0,3));
+}
