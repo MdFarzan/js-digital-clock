@@ -94,5 +94,6 @@ function setDate(){
     day.innerText = ($_date.toString().slice(0,3));
 
     date.innerText = $_date.getDate();
-    
+
+    month.innerText = $_date.toString().substr(4,3);
 }
