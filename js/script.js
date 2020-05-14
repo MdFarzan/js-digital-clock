@@ -70,6 +70,10 @@ function setHours(date){
 
   //setting greeting line
   setGreetings(new Date().getHours());  
+
+  //setting date
+  if(hour==12)
+  setDate();
 }
 
 function setGreetings(hour){
