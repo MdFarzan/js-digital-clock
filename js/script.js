@@ -96,4 +96,6 @@ function setDate(){
     date.innerText = $_date.getDate();
 
     month.innerText = $_date.toString().substr(4,3);
+
+    year.innerText = $_date.getFullYear();
 }
