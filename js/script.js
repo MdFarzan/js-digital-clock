@@ -90,6 +90,9 @@ function setGreetings(hour){
 
 //setting date
 function setDate(){
-    var date = new Date();
-    day.innerText = (date.toString().slice(0,3));
+    var $_date = new Date();
+    day.innerText = ($_date.toString().slice(0,3));
+
+    date.innerText = $_date.getDate();
+    
 }
