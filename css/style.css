@@ -64,3 +64,14 @@ body{
 #day{
     font-weight:bold;
 }
+
+footer{
+    position:absolute;
+    bottom:0;
+    left:50%;
+    transform:translateX(-50%);
+    
+}
+a{
+    text-decoration:none;
+}
