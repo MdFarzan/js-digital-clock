@@ -81,10 +81,10 @@ function setGreetings(hour){
     if(hour<12)
         greetings.innerText = "Good Morning.";
 
-    else if((hour>=12) && (hour<=18))
+    else if((hour>=12) && (hour<=17))
         greetings.innerText = "Good Afternoon.";
     
-    else if((hour>18) && (hour<=20))
+    else if((hour>17) && (hour<=20))
     greetings.innerText = "Good Evening.";
 
     else
